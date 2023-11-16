@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/cssTemplates.css">
+  </head>
+
+  <body>
+    <nav
+      class="navbar bg-body-tertiary navbar-expand-lg fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><i class="fa-solid fa-w" style="color: #0dd31b"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href=" {% url 'deneme' kat_ad='HTML' %} "
+              >
+                Html</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'deneme' kat_ad='CSS' %}">
+                Css</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Java</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Javascript</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> React</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Angular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Python</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Django</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> C</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> C++</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> C#</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Nodejs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Asp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> SQL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Php</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <i class="fa-solid fa-user me-5" style="color: #0dd31b"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid d-flex">
+      <div class="row">
+        <div
+          class="leftmenuinnerinner sticky-top col-2 border"
+          style="height: 100vh; overflow-y: scroll; width: 230px"
+        >
+          <div class="flex-shrink-0 p-3 align-items-stretch w-100">
+            <a
+              href="/"
+              class="d-flex align-items-center pb-3 mb-3 link-body text-decoration-none"
+            >
+              <svg class="bi pe-none me-2" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li>
+                <h5>HTML Tutorial</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML HOME</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Introduction</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Editors</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Basic</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Elements</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Attributes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Headings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Paragraphs</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Styles</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Formatting</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Quotations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Comments</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Colors</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML CSS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Links</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Images</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Favicon</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Page Title</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Tables</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Lists</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Block & Inline</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Classes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Id</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Iframes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML JavaScript</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML File Paths</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Head</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Layout</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Responsive</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Computercode</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Semantics</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Style Guide</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Entities</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Symbols</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Emojis</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Charset</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML URL Encode</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML vs. XHTML</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <h5>HTML Forms</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Forms</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Form Attributes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Form Elements</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Input Types</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Input Attributes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Input Form Attributes</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h5>HTML Graphics</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Canvas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML SVG</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h5>HTML Media</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Media</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Video</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Audio</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Plug-ins</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML YouTube</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h5>HTML APIs</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Geolocation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Drag/Drop</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Web Storage</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Web Workers</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML SSE</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h5>HTML Examples</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Examples</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Editor</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Quiz</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Exercises</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Bootcamp</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Certificate</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Summary</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Accessibility</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h5>HTML References</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Tag List</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Attributes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Global Attributes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Browser Support</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Events</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Colors</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Canvas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Audio/Video</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Doctypes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Character Sets</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML URL Encode</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Lang Codes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTTP Messages</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTTP Methods</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >PX to EM Converter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Keyboard Shortcuts</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="row">
+        <div class="col-10 mt-5 pt-5 ps-5">
+            <h1>CSS <span class="color_h1">Templates</span></h1>
+            <hr class="my-4" /> 
+            <h2>CSS Layout Templates</h2>
+            <p>We have created some responsive starter templates with CSS.</p>
+            <p>You are free to modify, save, share, and use them in all your projects.</p>
+            <div class="w3-row-padding" style="margin:24px -22px">
+                <div class="w3-col l6">
+                  <div class="w3-card-2 w3-padding w3-padding-16"><p style="margin-top:0px">Header, equal columns and footer:</p>
+                    <div class="container">
+                        <div class="a"></div>
+                        <div class="s"></div>
+                        <div class="d"></div>
+                        <div class="w"></div>
+                        <div class="b"></div>
+                      </div>
+                    <a target="_blank" href="tryit.asp?filename=trycss_template1_float" class="ws-btn w3-block" style="margin-top:8px">Try it (using float) »</a>
+                    <a target="_blank" href="tryit.asp?filename=trycss_template1_flexbox" class="ws-btn w3-block" style="margin-top:8px">Try it (using flexbox) »</a>
+                    <a target="_blank" href="tryit.asp?filename=trycss_template1_grid" class="ws-btn w3-block" style="margin-top:8px">Try it (using grid) »</a>
+                  </div>
+                </div>
+              
+                <div class="w3-col l6">
+                  <div class="w3-card-2 w3-padding w3-padding-16"><p style="margin-top:0px">Header, unequal columns and footer:</p>
+                    <div class="container2">
+                        <div class="a2"></div>
+                        <div class="x2"></div>
+                        <div class="y2"></div>
+                        <div class="z2"></div>
+                        <div class="b2"></div>
+                      </div>
+                    <a target="_blank" href="tryit.asp?filename=trycss_template2_float" class="ws-btn w3-block" style="margin-top:8px">Try it (using float) »</a>
+                    <a target="_blank" href="tryit.asp?filename=trycss_template2_flexbox" class="ws-btn w3-block" style="margin-top:8px">Try it (using flexbox) »</a>
+                    <a target="_blank" href="tryit.asp?filename=trycss_template2_grid" class="ws-btn w3-block" style="margin-top:8px">Try it (using grid) »</a>
+                  </div>
+                </div>
+              </div>
+              <div class="w3-row-padding" style="margin:28px -22px">
+                <div class="w3-col l6">
+                  <div class="w3-card-2 w3-padding w3-padding-16"><p style="margin-top:0px">Topnav, content and footer:</p>
+              <div>
+                <div class="container3">
+                    <div class="a3"></div>
+                    <div class="x3"></div>
+                    <div class="b3"></div>
+                  </div>
+              </div>
+                  
+                    <a target="_blank" href="tryit.asp?filename=trycss_template3" class="ws-btn w3-block" style="margin-top:8px">Try it Yourself »</a>
+                  </div>
+                </div>
+                <div class="w3-col l6">
+                  <div class="w3-card-2 w3-padding w3-padding-16"><p style="margin-top:0px">Sidenav and content:</p>
+              <div>
+                <div class="w3-row">
+                    <div class="container4">
+                        <div class="a4"></div>
+                        <div class="b4"></div>
+                      </div>
+                </div>
+              </div>
+                  
+              
+                    <a target="_blank" href="tryit.asp?filename=trycss_template4" class="ws-btn w3-block" style="margin-top:8px">Try it Yourself »</a>
+                  </div>
+                </div>
+              </div>
+              <div class="templatesNote">
+                <p>Ever heard about <strong>W3Schools Spaces</strong>? Here you can create your website from scratch or use a template, and host it for free.</p>
+                <a class="ws-btn" href="https://www.w3spaces.com" target="_blank" title="Get Started With W3Schools Spaces">Get started for free ❯</a>
+                <p class="w3-small"><em>* no credit card required</em></p>
+              </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-2 mt-5">
+          <div>
+            <img
+              src="https://images01.nicepagecdn.com/page/55/87/tr/web-sitesi-sablonu-preview-5587790.jpg"
+              class="w-75"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-12 pe-0 ps-4">
+          <img
+            src="https://www.w3schools.com/images/background_in_space.gif"
+            alt=""
+            class="w-100 h-100"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- AJAX kullanarak sayfa değiştirme  -->
+    <script>
+      $(document).ready(function () {
+        // Sayfa numaralarına tıklama işlemi
+        $(document)
+          .off("click", ".pagination a.page-link")
+          .on("click", ".pagination a.page-link", function (e) {
+            e.preventDefault(); // Sayfanın yeniden yüklenmesini engelleme
+            var url = $(this).attr("href"); // Tıklanan sayfa bağlantısını alma
+            $.ajax({
+              url: url,
+              type: "GET",
+              success: function (data) {
+                // Yüklenecek veriyi sayfa içine yerleştirme
+                $("#your-card-container").html(
+                  $(data).find("#your-card-container").html()
+                );
+              },
+              error: function () {
+                alert("Sayfa yüklenirken bir hata oluştu.");
+              },
+            });
+          });
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

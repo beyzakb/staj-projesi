@@ -1,0 +1,437 @@
+<!-- layout.html -->
+{% load mptt_tags %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{titlecontent|upper}} </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" {% static 'sayfalar/sayfa.css' %} ">
+</head>
+<style>
+    /* footer------------------------------------------******************* */
+@import url('https://fonts.googleapis.com/css2? family= Herr+Von+Muellerhoff & family= Jost:ital,wght@0,400;1,300;1,400;1,600 & family= Poppins:ital, wght@1,800;1,900 & family= Qwitcher+Grypen:wght@700 & family= Roboto:ital,wght@0,100;0,700;1,400 & family= Source+Sans+3:wght@800 & display=swap');
+
+.footer {
+	background: black;
+	/* Arka plan resminizin dosya yolunu buraya ekleyin */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 70px 0;
+
+}
+
+.footer-col {
+	width: 25%;
+}
+
+.footer-col h5 {
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	font-size: 18px;
+	color: #ffff;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: capitalize;
+	font-weight: 300;
+}
+
+.footer-col h5::before {
+	content: "";
+	left: 0;
+	bottom: -10px;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	margin-bottom: -8px;
+	font-size: 12px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ffff;
+	display: block;
+	transition: all 0.3s ease;
+	font-family: 'Kaynak Sans 3', sans-serif;
+	line-height: 15px;
+}
+
+.footer-col ul li a:hover {
+	color: #59bd1b;
+}
+
+.footersome ul {
+	margin-top: 3rem;
+	margin-bottom: 20px;
+	margin-left: 1rem;
+}
+
+.footersome ul a {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: auto;
+	padding: 3px;
+}
+
+
+.footertext {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-left: 3rem;
+	color: #ddd;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.footertext a.ga-bottom {
+	text-decoration: underline;
+	margin: auto;
+}
+
+
+a:-webkit-any-link {
+	text-decoration: none;
+	margin-left: 1rem;
+}
+
+.ga-bottom:hover {
+	color: #59bd1b;
+}
+
+.footertitle{
+	justify-content: center;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+
+@media (max-width: 900px) {
+	.mb-5{
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+    	justify-content: center;
+		padding-right: 4rem;
+		width: 100%;
+	}
+	.footertext{
+		text-align: center;
+	}
+}
+/* footer------------------------------------------******************* */
+@media (max-width: 800px) {
+    #sol-kategori-css1 {
+      display: none;
+    }
+    #içerik-css1{
+        margin-left:0!important;
+    }
+    #içerik-css2{
+        display:none;
+    }
+  }
+  
+</style>
+<body>
+
+    <div class="fixed-top">
+        {% include "partials/_navbar.html" %}
+
+    </div>
+
+    <div class="container-fluid d-flex p-0 mt-3"  >
+        <div class="row" id="sol-kategori-css1">
+            {% include "partials/_kategori.html" %}
+        </div>
+        <div class="row overflow-x-hidden" style="margin-left:240px;" id="içerik-css1">
+            <div class="col-10 mt-5 pt-5 ps-5 ">
+                {% comment %} hata mesajı {% endcomment %}
+                {% if page_obj.object_list|length == 0 %}
+                <div class="alert alert-warning ">Kurs Bulunamadı</div>
+                {% endif %}
+
+                {% for kategoriler in page_obj.object_list %}
+                <h2 class="my-2">
+                    {{kategoriler.isim}}
+                </h2>
+                {% endfor %}
+
+                {% comment %} hata mesajı {% endcomment %}
+                {% comment %} sayfalaa ileri geri butonları {% endcomment %}
+                <div  >
+                    {% if page_obj.paginator.num_pages > 1 %}
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination d-flex justify-content-between">
+                                    {% if page_obj.has_previous %}
+                                    <li class="page-item"><a class="page-item btn btn-success border-succes border-3 py-2 px-3  " href="?page={{ page_obj.previous_page_number }} ">Previous</a></li>
+                                    {% else %}
+                                    <li class="page-item"><a class="page-item btn btn-success border-succes border-3 py-2 px-3 disabled" href="#">Previous</a></li>
+                                    {% endif %}
+                                    
+                                    {% if page_obj.has_next %}
+                                    <li class="page-item"><a class="page-item btn btn-success border-succes border-3 py-2 px-3 " id="loadNextPage" href="?page={{ page_obj.next_page_number }} ">Next ></a></li>
+                                    {% else %}
+                                    <li class="page-item"><a class="page-item btn btn-success border-succes border-3 py-2 px-3 disabled" href="#">Geri</a></li>
+                                    {% endif %}
+                                </ul>
+                            </nav>
+                            {% endif %}
+                        </div>
+                        {% comment %} sayfalaa ileri geri butonları {% endcomment %}
+                {% comment %} açıklama yeri {% endcomment %}
+                
+                {% for kategoriler in page_obj.object_list %}
+                {{kategoriler.aciklama | safe }} 
+                {% endfor %}
+                {% comment %} açıklama yeri {% endcomment %}
+                                {% comment %} sayfalaa ileri geri butonları {% endcomment %}
+                                <div class=" " style="margin-top:100px;">
+                                    {% if page_obj.paginator.num_pages > 1 %}
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination d-flex justify-content-between " >
+                                                    {% if page_obj.has_previous %}
+                                                    <li class="page-item"><a class="page-item btn btn-success border-succes border-3 py-2 px-3  " href="?page={{ page_obj.previous_page_number }} ">Previous</a></li>
+                                                    {% else %}
+                                                    <li class="page-item"><a class="page-item btn btn-success border-succes border-3 py-2 px-3 disabled" href="#">Previous</a></li>
+                                                    {% endif %}
+                                                    
+                                                    {% if page_obj.has_next %}
+                                                    <li class="page-item"><a class="page-item btn btn-success border-succes border-3 py-2 px-3 " id="loadNextPage" href="?page={{ page_obj.next_page_number }} ">Next ></a></li>
+                                                    {% else %}
+                                                    <li class="page-item"><a class="page-item btn btn-success border-succes border-3 py-2 px-3 disabled" href="#">Geri</a></li>
+                                                    {% endif %}
+                                                </ul>
+                                            </nav>
+                                            {% endif %}
+                                        </div>
+                                        {% comment %} sayfalaa ileri geri butonları {% endcomment %}
+                                        
+        
+            </div>
+            <div class="col-2 mt-5 border " id="içerik-css2">
+                <div class="mt-5">
+                    <img src="https://images01.nicepagecdn.com/page/55/87/tr/web-sitesi-sablonu-preview-5587790.jpg" class="w-75 ms-4 " alt="">
+                </div>
+            </div>
+            <div class="col-12 pe-0 ps-4">
+                <footer class="footer">
+                    <div class="container">
+            
+                        <!--ÜST KATEGORİ-->
+            
+                        {% comment %} <a href="https://www.w3schools.com/">
+                            <i class="fa-solid fa-w"></i> {% endcomment %}
+            
+                            <div class="footertitle col-12 d-flex ">
+                                <div class="row mb-5">
+                                    <div class="col-1"><a href="https://www.w3schools.com/" class="text-warning-emphasis"><i
+                                                class="fa-solid fa-w"></i></a>
+            
+                                    </div>
+                                    <div class="col text-warning">
+                                    </div>
+                                    <div class="col text-warning"><a href="https://www.w3schools.com/spaces/index.php"
+                                            class="text-warning-emphasis">SPACES</a></div>
+                                    <div class="col text-warning"><a href="https://www.w3schools.com/pro/index.php"
+                                            class="text-warning-emphasis">UPGRADE</a></div>
+                                    <div class="col text-warning"><a href="https://campus.w3schools.com/pages/newsletter"
+                                            target="_blank" class="text-warning-emphasis">NEWSLETTER</a></div>
+                                    <div class="col text-warning"><a href="https://campus.w3schools.com/collections/certifications"
+                                            target="_blank" class="text-warning-emphasis">CERTİFİED</a></div>
+                                </div>
+                            </div>
+            
+                            <!--üst kategori-->
+            
+                            <div class="footertext row">
+                                <div class="footer-col">
+                                    <ul>
+                                        <li>
+                                            <h5>Top Tutorials</h5>
+                                        </li>
+                                        <li><a href="#">HTML Tutorial</a></li>
+                                        <li><a href="#">CSS Tutorial</a></li>
+                                        <li><a href="#">JavaScript Tutorial</a></li>
+                                        <li><a href="#">How To Tutorial</a></li>
+                                        <li><a href="#">SQL Tutorial</a></li>
+                                        <li><a href="#">Python Tutorial</a></li>
+                                        <li><a href="#">W3.CSS Tutorial</a></li>
+                                        <li><a href="#">Bootstrap Tutorial</a></li>
+                                        <li><a href="#">PHP Tutorial</a></li>
+                                        <li><a href="#">java Tutorial</a></li>
+                                        <li><a href="#">C++ Tutorial</a></li>
+                                        <li><a href="#">jQuery Tutorial</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-col">
+                                    <ul>
+                                        <li>
+                                            <h5>Top References</h5>
+                                        </li>
+                                        <li><a href="#">HTML Reference</a></li>
+                                        <li><a href="#">CSS Reference</a></li>
+                                        <li><a href="#">JavaScript Reference</a></li>
+                                        <li><a href="#">SQL Reference</a></li>
+                                        <li><a href="#">Python Reference</a></li>
+                                        <li><a href="#">W3.CSS Reference</a></li>
+                                        <li><a href="#">Bootstrap Reference</a></li>
+                                        <li><a href="#">PHP Reference</a></li>
+                                        <li><a href="#">java Reference</a></li>
+                                        <li><a href="#">Angular Reference</a></li>
+                                        <li><a href="#">jQuery Reference</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-col">
+                                    <ul>
+                                        <li>
+                                            <h5>Top Examples</h5>
+                                        </li>
+                                        <li><a href="#">HTML Examples</a></li>
+                                        <li><a href="#">CSS Examples</a></li>
+                                        <li><a href="#">JavaScript Examples</a></li>
+                                        <li><a href="#">How To Examples</a></li>
+                                        <li><a href="#">SQL Examples</a></li>
+                                        <li><a href="#">Python Examples</a></li>
+                                        <li><a href="#">W3.CSS Examples</a></li>
+                                        <li><a href="#">Bootstrap Examples</a></li>
+                                        <li><a href="#">PHP Examples</a></li>
+                                        <li><a href="#">java Examples</a></li>
+                                        <li><a href="#">XML Examples</a></li>
+                                        <li><a href="#">jQuery Examples</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-col">
+                                    <ul>
+                                        <li>
+                                            <h5>Get Certified</h5>
+                                        </li>
+                                        <li><a href="#">HTML Certified</a></li>
+                                        <li><a href="#">CSS Certified</a></li>
+                                        <li><a href="#">JavaScript Certified</a></li>
+                                        <li><a href="#">Front End Certified</a></li>
+                                        <li><a href="#">SQL Certified</a></li>
+                                        <li><a href="#">Python Certified</a></li>
+                                        <li><a href="#">PHP Certified</a></li>
+                                        <li><a href="#">java Certified</a></li>
+                                        <li><a href="#">XML Certified</a></li>
+                                        <li><a href="#">jQuery Certified</a></li>
+                                        <li><a href="#">C++ Certified</a></li>
+                                        <li><a href="#">C# Certified</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footersome">
+                                    <ul>
+                                        <a href="https://www.facebook.com/w3schoolscom/">
+                                            <i class="fa-brands fa-facebook me-2"></i>
+                                        </a>
+            
+                                        <a href="https://discord.com/channels/894869766286753813/@home">
+                                            <i class="fa-brands fa-discord me-2"></i>
+                                        </a>
+            
+                                        <a href="https://www.linkedin.com/company/w3schools.com/">
+                                            <i class="fa-brands fa-linkedin me-2"></i>
+                                        </a>
+            
+                                        <a href="https://www.instagram.com/w3schools.com_official/">
+                                            <i class="fa-brands fa-instagram me-2"></i>
+                                        </a>
+            
+                                        <a href="https://w3schools.invisionzone.com/" target="_blank">FORUM</a>
+                                        <a href="https://www.w3schools.com/about/default.asp" target="_blank">ABOUT</a>
+                                    </ul>
+            
+                                    <div class="footertext">
+                                        W3Schools is optimized for learning and training. Examples might be simplified to improve
+                                        reading and learning.
+                                        <br class="footer-hide-special">
+                                        Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot
+                                        warrant full correctness
+                                        <br class="footer-hide-special">
+                                        of all content. While using W3Schools, you agree to have read and accepted our
+                                        <a href="https://www.w3schools.com/about/about_copyright.asp" class="ga-bottom">terms of
+                                            use</a>,
+                                        <a href="https://www.w3schools.com/about/about_privacy.asp" class="ga-bottom">cookie and
+                                            privacy policy</a>.
+                                        <br>
+                                        <br>
+                                        Report Error
+                                        <br>
+                                        <br>
+                                        If you want to report an error, or if you want to make a suggestion, do not hesitate to send
+                                        us an e-mail:
+                                        <br>
+                                        help@w3schools.com
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <a href="https://www.w3schools.com/about/about_copyright.asp" class="ga-bottom">Copyright
+                                            1999-2023</a>
+                                        by Refsnes Data. All Rights Reserved.
+                                        <a href="https://www.w3schools.com/w3css/default.asp" class="ga-bottom">W3Schools is Powered
+                                            by
+                                            W3.CSS</a>.
+                                        <br><br>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </footer>
+                {% comment %} <img src="https://www.w3schools.com/images/background_in_space.gif" alt="" class="w-100 h-100"> {% endcomment %}
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- JQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    {% for kategoriler in page_obj.object_list %}
+    
+    {% if kategoriler.isim == 'HTML Tutorial' %}
+    <script>
+        var kategoriData = '{{ kategori_json|escapejs }}';
+        
+    </script>
+    
+    <script src=" {% static 'js/htmlHome.js' %} "></script>
+    {% else %}
+    
+    <script src=" {% static 'js/app.js' %} "></script>
+    {% endif %}
+    {% endfor %}
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+</body>
+</html>
+

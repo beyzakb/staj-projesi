@@ -1,0 +1,241 @@
+{% load custom_filters %}
+
+<nav class="navbar navbar-expand-lg fixed-top z-3 bg-body-tertiary" style="height:56px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=" {% url 'index' %} "><svg width="38" height="35" viewBox="0 0 38 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.3987 7.36607C31.3987 7.36607 32.3362 8.37054 33.6458 8.37054C34.68 8.37054 35.4315 7.74554 35.4315 6.88988C35.4315 5.84077 34.4716 5.35714 33.3109 5.35714H32.6264L32.2172 4.43452L34.0327 2.28423C34.4196 1.82292 34.7469 1.53274 34.7469 1.53274C34.7469 1.53274 34.4568 1.54762 33.869 1.54762H30.9151V0L36.9642 0V1.13095L34.5386 3.93601C35.9077 4.12946 37.2469 5.10417 37.2469 6.82292C37.2469 8.51191 35.9672 10.0744 33.7574 10.0744C31.6517 10.0744 30.4836 8.75 30.4836 8.75L31.3987 7.36607Z" fill="#04AA6D"></path><path d="M19.5981 9.45695L27.5892 23.6831L31.5326 16.6519L23.988 3.22183H15.2082L11.5698 9.70249L7.93146 3.22183H0.0371094L11.5252 23.6831L11.5698 23.6087L11.6145 23.6831L19.5981 9.45695Z" fill="#04AA6D"></path><path d="M0.118958 33.3257H1.28711C1.28711 33.668 1.58473 33.9954 2.11301 33.9954C2.60408 33.9954 2.93146 33.7498 2.93146 33.4224C2.93146 33.1397 2.71568 33.0132 2.34366 32.9314L1.67402 32.7602C0.543065 32.4626 0.252886 31.8599 0.252886 31.2201C0.252886 30.4388 1.0267 29.7245 2.12045 29.7245C3.0133 29.7245 4.02521 30.1784 4.01033 31.2945H2.82729C2.82729 30.9522 2.51479 30.7364 2.15765 30.7364C1.77074 30.7364 1.50289 30.9596 1.50289 31.2721C1.50289 31.5326 1.74842 31.6814 2.0386 31.7483L2.84217 31.9641C3.97312 32.2543 4.17402 32.9611 4.17402 33.4224C4.17402 34.4418 3.15467 34.9998 2.13533 34.9998C1.14574 34.9998 0.141279 34.3971 0.118958 33.3257Z" fill="#04AA6D"></path><path d="M5.20837 32.3584C5.20837 30.7662 6.48814 29.7245 7.93903 29.7245C8.80956 29.7245 9.51641 30.1114 9.97772 30.6918L9.09974 31.3912C8.83933 31.0787 8.41522 30.8852 7.96135 30.8852C7.09081 30.8852 6.46581 31.5102 6.46581 32.3584C6.46581 33.1992 7.09081 33.8391 7.96135 33.8391C8.41522 33.8391 8.83933 33.6457 9.09974 33.3332L9.97772 34.0326C9.51641 34.6129 8.80956 34.9998 7.93903 34.9998C6.48814 34.9998 5.20837 33.9507 5.20837 32.3584Z" fill="#04AA6D"></path><path d="M15.9895 32.0535V34.866H14.7395V32.1428C14.7395 31.3392 14.2559 30.9077 13.6979 30.9077C13.1249 30.9077 12.4181 31.2425 12.4181 32.2172V34.8735H11.1681V27.1205H12.4255V30.6101C12.6711 29.9999 13.4821 29.7172 13.9806 29.7172C15.2752 29.7246 15.9895 30.5952 15.9895 32.0535Z" fill="#04AA6D"></path><path d="M17.299 32.3584C17.299 30.7662 18.5341 29.7245 19.9626 29.7245C21.3912 29.7245 22.6412 30.7662 22.6412 32.3584C22.6412 33.9507 21.3912 34.9998 19.9626 34.9998C18.5341 34.9998 17.299 33.9507 17.299 32.3584ZM21.3838 32.3584C21.3838 31.4954 20.7364 30.8852 19.9626 30.8852C19.1888 30.8852 18.5564 31.4954 18.5564 32.3584C18.5564 33.2364 19.1888 33.8391 19.9626 33.8391C20.7364 33.8391 21.3838 33.2364 21.3838 32.3584Z" fill="#04AA6D"></path><path d="M23.7053 32.3584C23.7053 30.7662 24.9404 29.7245 26.369 29.7245C27.7975 29.7245 29.0475 30.7662 29.0475 32.3584C29.0475 33.9507 27.7975 34.9998 26.369 34.9998C24.9478 34.9998 23.7053 33.9507 23.7053 32.3584ZM27.7901 32.3584C27.7901 31.4954 27.1428 30.8852 26.369 30.8852C25.5951 30.8852 24.9627 31.4954 24.9627 32.3584C24.9627 33.2364 25.5951 33.8391 26.369 33.8391C27.1502 33.8391 27.7901 33.2364 27.7901 32.3584Z" fill="#04AA6D"></path><path d="M30.4314 34.8735V27.1205H31.6814V34.8735H30.4314Z" fill="#04AA6D"></path><path d="M33.0431 33.3257H34.2112C34.2112 33.668 34.5089 33.9954 35.0371 33.9954C35.5282 33.9954 35.8556 33.7498 35.8556 33.4224C35.8556 33.1397 35.6398 33.0132 35.2678 32.9314L34.5982 32.7602C33.4672 32.4626 33.177 31.8599 33.177 31.2201C33.177 30.4388 33.9508 29.7245 35.0446 29.7245C35.9374 29.7245 36.9493 30.1784 36.9345 31.2945H35.744C35.744 30.9522 35.4315 30.7364 35.0743 30.7364C34.6874 30.7364 34.4196 30.9596 34.4196 31.2721C34.4196 31.5326 34.6651 31.6814 34.9553 31.7483L35.7589 31.9641C36.8898 32.2543 37.0907 32.9611 37.0907 33.4224C37.0907 34.4418 36.0714 34.9998 35.052 34.9998C34.0624 34.9998 33.0654 34.3971 33.0431 33.3257Z" fill="#04AA6D"></path><defs></defs></svg></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active mx-1 px-3" id="dropdownBtn" aria-current="page" href="#">Home
+                
+                <svg xmlns="http://www.w3.org/2000/svg" id="caret-down" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" id="caret-up"  height="12" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+              </svg>
+            
+            </a>
+            
+            <div id="dropdownContent" class="dropdown-content overflow-auto">
+                <div class=" m-5 px-5">
+                    <div class="row w-100 m-5">
+                        <div class="col-12 d-flex my-4 me-auto">
+                            <div class="col-4 text-start">
+                                <h2>Tutorials</h2>
+                            </div>
+                            <div class="col-3 ">
+                                <div class="position-relative" style="width: 280px;" >
+                                    <input type="text" id="searchInput" placeholder="Filter..." class="search-nav-input rounded-pill" style="background-color: #464646;color:white;font-size:23px;">
+                                    <div class="position-absolute end-0 top-50 translate-middle"><span type="button" class="search-span d-inline  rounded-circle " >x</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        {% for i in navbarKategori %}
+                        <div  class="ust-nav-category d-flex flex-column align-items-start my-3 ">
+                                <h4 class="  ms-2"> {{i.ad}} </h4>
+                                {% for s in i.kategori_set.all %}
+                                <div class="category-1 col-12 text-start ">
+                                    <div class="text-start">
+                                        <a href="{% url 'deneme' kat_ad=s.isim|slugify|custom_split:'-'|first|upper %}" >
+                                            <span class="nav-dropdown-learn">learn</span>
+                                            {{s.isim|slugify|custom_split:'-'|first|upper }}
+                                        </a>
+                                        <a href="{% url 'deneme' kat_ad=s.isim|slugify|custom_split:'-'|first|upper %}">Tutorial</a>
+                                        {% if 'referance' in s.slug %}
+                                        <a href="{% url 'html' s.slug  %}">Referance</a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                                {% endfor %}
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active mx-1 px-3" id="dropdownBtn2" aria-current="page" href="#">exercises
+                
+                <svg xmlns="http://www.w3.org/2000/svg" id="caret-down" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" id="caret-up"  height="12" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+              </svg>
+            
+            </a>
+            
+            <div id="dropdownContent2" class="dropdown-content overflow-auto">
+                <div class=" m-5 px-5">
+                    <div class="row w-100 m-5">
+                        <div class="col-12 d-flex my-4 me-auto">
+                            <div class="col-4 text-start">
+                                <h2>Exercises</h2>
+                            </div>
+                            <div class="col-3 ">
+                                <div class="position-relative" style="width: 280px;" >
+                                    <input type="text" id="searchInput2" placeholder="Filter..." class="search-nav-input rounded-pill" style="background-color: #464646;color:white;font-size:23px;">
+                                    <div class="position-absolute end-0 top-50 translate-middle"><span type="button" class="search-span d-inline  rounded-circle " >x</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        {% for i in navbarKategori %}
+                        <div  class="ust-nav-category d-flex flex-column align-items-start my-3 ">
+                                <h4 class="  ms-2"> {{i.ad}} </h4>
+                                {% for s in i.kategori_set.all %}
+                                <div class="category-2 col-12 text-start ">
+                                    <div class="text-start">
+                                        <a href="{% url 'deneme' kat_ad=s.isim|slugify|custom_split:'-'|first|upper %}" >
+                                            <span class="nav-dropdown-learn">learn</span>
+                                            {{s.isim|slugify|custom_split:'-'|first|upper }}
+                                        </a>
+                                        <a href="{% url 'deneme' kat_ad=s.isim|slugify|custom_split:'-'|first|upper %}">Tutorial</a>
+                                        
+                                        {% for d in i.quizbaslik_set.all %}
+                                        {% if d|slugify|custom_split:'-'|first|upper in s.isim|slugify|custom_split:'-'|first|upper  %}
+                                            <a href="{% url 'quiz' d.id  %}">quiz</a>
+                                        {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                                {% endfor %}
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active mx-1 px-3" id="dropdownBtn3" aria-current="page" href="#">services
+                
+                <svg xmlns="http://www.w3.org/2000/svg" id="caret-down" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" id="caret-up"  height="12" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+              </svg>
+            
+            </a>
+            
+            <div id="dropdownContent3" class="dropdown-content">
+                <div class=" m-5 px-5">
+                    <div class="row w-100 m-5">
+                        <div class="col-12 d-flex my-4 me-auto">
+                            <div class="col-4 text-start">
+                                <h2>Tutorials</h2>
+                            </div>
+                            <div class="col-3 ">
+                                <div class="position-relative" style="width: 280px;" >
+                                    <input type="text" id="searchInput3" placeholder="Filter..." class="search-nav-input rounded-pill" style="background-color: #464646;color:white;font-size:23px;">
+                                    <div class="position-absolute end-0 top-50 translate-middle"><span type="button" class="search-span d-inline  rounded-circle " >x</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href=" {% url 'simon-game' %} " class="col-3 text-decoration-none" >
+                            <div  class="ust-nav-category  m-2 rounded  bg-secondary d-flex flex-column align-items-start my-3  ">
+                                <h4 class="  ms-2 p-2 "> Simon Game </h4>
+                                <div class="category-3 p-2 text-start ">
+                                    <div class="text-start text-white ms-1">
+                                            Simon Game 
+                                        </div>
+                                    </div>
+                                </div>
+                        </a>
+                        <a href=" {% url 'deneme' kat_ad='html' %} " class="col-3 text-decoration-none  " >
+                            <div  class="ust-nav-category  m-2 rounded   d-flex flex-column align-items-start my-3  bg-secondary  ">
+                                <h4 class="  ms-2 p-2"> Nereden Başlamalıyım </h4>
+                                <div class="category-3 p-2 text-start ">
+                                    <div class="text-start text-white ms-1">
+                                            Html tutorial dan başlayabilirsin
+                                        </div>
+                                    </div>
+                                </div>
+                        </a>
+                        <a href=" {% url 'quiz' 1 %} " class="col-3 text-decoration-none  " >
+                            <div  class="ust-nav-category  m-2 rounded   d-flex flex-column align-items-start my-3  bg-secondary  ">
+                                <h4 class="  ms-2 p-2"> Quizler </h4>
+                                <div class="category-3 p-2 text-start ">
+                                    <div class="text-start text-white ms-1">
+                                            Quizler    Kendini dene
+                                        </div>
+                                    </div>
+                                </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+          </li>
+        </ul>
+        {% comment %} search {% endcomment %}
+            <div class="position-relative pt-1 pe-1 ms-5" >
+                <input type="text" id="searchbar" class="search-up rounded-pill " placeholder="Search..." oninput="filterCategories()">
+                <div class="position-absolute end-0 translate-middle top-50">
+                    <span class="me-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="position-absolute bg-light z-3" style="margin-top:2px;">
+                    <div id="categories" >
+                        <table class="table  shadow-lg p-3 bg-body-tertiary rounded">
+                            <tr class="d-flex flex-column border-0">
+                                {% for i in searc %}
+                                <td class="px-4 pt-2 border-0 text-start" >
+    
+                                    <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" {% if i.referanceActive %}href="{% url 'html' i.isim|slugify %}" {% else %} href=" {% url 'deneme' kat_ad=i.isim|slugify|custom_split:'-'|first %} " {% endif %} >
+                                        <div> {{i.isim}} </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                        </svg>
+                                    </a>
+                                </td>
+                                    {% endfor %}
+                            </tr>
+                            </table>
+                    <!-- Diğer kategoriler buraya eklenebilir -->
+                    </div>
+                </div>
+            </div>
+            <a href=" {% url 'index2' %} ">react</a>
+
+            
+        {% comment %} search {% endcomment %}
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+<nav class="navbar bg-body-tertiary navbar-expand overflow-x-auto overflow-y-hidden fixed-top z-1  " style="height:45px;" data-bs-theme="dark">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            {% for i in navbarKategori %}
+            {% for s in i.kategori_set.all %}
+            
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href=" {% url 'deneme' kat_ad=s.isim|slugify|custom_split:'-'|first %} "> {{s.isim|slugify|custom_split:'-'|first|upper}}</a>
+            </li>
+            {% endfor %}
+            {% endfor %}
+
+        </ul>
+
+    </div>
+    </div>
+</nav>
+

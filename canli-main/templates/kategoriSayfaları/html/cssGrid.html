@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/cssGrid.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar bg-body-tertiary navbar-expand-lg fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><i class="fa-solid fa-w" style="color: #0dd31b"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href=" {% url 'deneme' kat_ad='HTML' %} "
+              >
+                Html</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'deneme' kat_ad='CSS' %}">
+                Css</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Java</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Javascript</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> React</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Angular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Python</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Django</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> C</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> C++</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> C#</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Nodejs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Asp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> SQL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Php</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <i class="fa-solid fa-user me-5" style="color: #0dd31b"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid d-flex">
+      <div class="row">
+        <div
+          class="leftmenuinnerinner sticky-top col-2 border"
+          style="height: 100vh; overflow-y: scroll; width: 230px"
+        >
+          <div class="flex-shrink-0 p-3 align-items-stretch w-100">
+            <a
+              href="/"
+              class="d-flex align-items-center pb-3 mb-3 link-body text-decoration-none"
+            >
+              <svg class="bi pe-none me-2" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li>
+                <h5>HTML Tutorial</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML HOME</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Introduction</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Editors</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Basic</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Elements</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Attributes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Headings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Paragraphs</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Styles</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Formatting</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Quotations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Comments</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Colors</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML CSS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Links</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Images</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Favicon</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Page Title</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Tables</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Lists</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Block & Inline</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Classes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Id</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Iframes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML JavaScript</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML File Paths</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Head</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Layout</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Responsive</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Computercode</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Semantics</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Style Guide</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Entities</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Symbols</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Emojis</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Charset</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML URL Encode</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML vs. XHTML</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <h5>HTML Forms</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Forms</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Form Attributes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Form Elements</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Input Types</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Input Attributes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Input Form Attributes</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h5>HTML Graphics</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Canvas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML SVG</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h5>HTML Media</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Media</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Video</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Audio</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Plug-ins</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML YouTube</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h5>HTML APIs</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Geolocation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Drag/Drop</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Web Storage</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Web Workers</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML SSE</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h5>HTML Examples</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Examples</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Editor</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Quiz</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Exercises</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Bootcamp</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Certificate</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Summary</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Accessibility</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h5>HTML References</h5>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="list-unstyled mt-1 mb-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Tag List</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Attributes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Global Attributes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Browser Support</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Events</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Colors</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Canvas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Audio/Video</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Doctypes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Character Sets</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML URL Encode</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTML Lang Codes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTTP Messages</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >HTTP Methods</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >PX to EM Converter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Keyboard Shortcuts</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-9 mt-5 pt-5 ps-5">
+          <h1>CSS Grid Layout Module</h1>
+          <hr class="my-4" />
+          <div
+            class="grid-container"
+            style="
+              grid-template-areas:
+                'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+            "
+          >
+            <div class="grid-item" style="grid-area: header">
+              <h3>Header</h3>
+            </div>
+            <div class="grid-item" style="grid-area: menu"><h3>Menu</h3></div>
+            <div class="grid-item" style="grid-area: main"><h3>Main</h3></div>
+            <div class="grid-item" style="grid-area: right"><h3>Right</h3></div>
+            <div class="grid-item" style="grid-area: footer">
+              <h3>Footer</h3>
+            </div>
+          </div>
+          <p>
+            <a
+              class="ws-btn"
+              target="_blank"
+              href="tryit.asp?filename=trycss_grid_layout_named"
+              >Try it Yourself »</a
+            >
+          </p>
+          <hr class="my-4" />
+          <h2>Grid Layout</h2>
+          <p>
+            The CSS Grid Layout Module offers a grid-based layout system, with
+            rows and columns, making it easier to design web pages without
+            having to use floats and positioning.
+          </p>
+          <hr class="my-4" />
+          <h2>Browser Support</h2>
+          <p>The grid properties are supported in all modern browsers.</p>
+          <div class="w3-responsive">
+            <table class="browserref notranslate">
+              <tbody>
+                <tr>
+                  <th
+                    style="width: 20%; height: 50px"
+                    class="bsChrome"
+                    title="Chrome"
+                  >
+                    Chrome
+                  </th>
+                  <th
+                    style="width: 20%"
+                    class="bsEdge"
+                    title="Internet Explorer / Edge"
+                  >
+                    Internet Explorer / Edge
+                  </th>
+                  <th style="width: 20%" class="bsFirefox" title="Firefox">
+                    Firefox
+                  </th>
+                  <th style="width: 20%" class="bsSafari" title="Safari">
+                    Safari
+                  </th>
+                  <th style="width: 20%" class="bsOpera" title="Opera">
+                    Opera
+                  </th>
+                </tr>
+                <tr style="background-color: #e7e9eb">
+                  <td>57.0</td>
+                  <td>16.0</td>
+                  <td>52.0</td>
+                  <td>10</td>
+                  <td>44</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr class="my-4" />
+          <h2>Grid Elements</h2>
+          <p>
+            A grid layout consists of a parent element, with one or more child
+            elements.
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate htmlHigh">
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >div<span class="attributecolor" style="color: red">
+                  class<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="grid-container"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              ><br />&nbsp;
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >div<span class="attributecolor" style="color: red">
+                  class<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="grid-item"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >1<span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >/div<span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              ><br />&nbsp;
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >div<span class="attributecolor" style="color: red">
+                  class<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="grid-item"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >2<span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >/div<span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              ><br />&nbsp;
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >div<span class="attributecolor" style="color: red">
+                  class<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="grid-item"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >3<span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >/div<span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              ><br />&nbsp;
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >div<span class="attributecolor" style="color: red">
+                  class<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="grid-item"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >4<span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >/div<span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              ><br />&nbsp;
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >div<span class="attributecolor" style="color: red">
+                  class<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="grid-item"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >5<span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >/div<span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              ><br />&nbsp;
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >div<span class="attributecolor" style="color: red">
+                  class<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="grid-item"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >6<span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >/div<span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              ><br />&nbsp;
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >div<span class="attributecolor" style="color: red">
+                  class<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="grid-item"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >7<span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >/div<span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              ><br />&nbsp;
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >div<span class="attributecolor" style="color: red">
+                  class<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="grid-item"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >8<span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >/div<span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              ><br />&nbsp;
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >div<span class="attributecolor" style="color: red">
+                  class<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="grid-item"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >9<span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >/div<span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              ><br /><span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >/div<span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >
+            </div>
+
+            <div class="w3-white notranslate w3-padding">
+              <div
+                class="grid-container2"
+                style="grid-template-columns: auto auto auto"
+              >
+                <div class="grid-item2"><h1>1</h1></div>
+                <div class="grid-item2"><h1>2</h1></div>
+                <div class="grid-item2"><h1>3</h1></div>
+                <div class="grid-item2"><h1>4</h1></div>
+                <div class="grid-item2"><h1>5</h1></div>
+                <div class="grid-item2"><h1>6</h1></div>
+                <div class="grid-item2"><h1>7</h1></div>
+                <div class="grid-item2"><h1>8</h1></div>
+                <div class="grid-item2"><h1>9</h1></div>
+              </div>
+            </div>
+
+            <p>
+              <a
+                class="w3-btn"
+                target="_blank"
+                href="tryit.asp?filename=trycss_grid"
+                >Try it Yourself »</a
+              >
+            </p>
+          </div>
+          <hr class="my-4" />
+          <br />
+          <hr class="my-4" />
+          <h2>Display Property</h2>
+          <p>
+            An HTML element becomes a grid container when its
+            <code class="w3-codespan">display</code> property is set to
+            <code class="w3-codespan">grid</code> or
+            <code class="w3-codespan">inline-grid</code>.
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh">
+              <span class="cssselectorcolor" style="color: brown">
+                .grid-container
+                <span class="cssdelimitercolor" style="color: black">{</span
+                ><span class="csspropertycolor" style="color: red"
+                  ><br />&nbsp; display<span
+                    class="csspropertyvaluecolor"
+                    style="color: mediumblue"
+                    ><span class="cssdelimitercolor" style="color: black"
+                      >:</span
+                    >
+                    grid<span class="cssdelimitercolor" style="color: black"
+                      >;</span
+                    ></span
+                  ><br /></span
+                ><span class="cssdelimitercolor" style="color: black">}</span>
+              </span>
+            </div>
+            <p>
+              <a
+                class="w3-btn"
+                target="_blank"
+                href="tryit.asp?filename=trycss_grid_display_grid"
+                >Try it Yourself »</a
+              >
+            </p>
+          </div>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh">
+              <span class="cssselectorcolor" style="color: brown">
+                .grid-container
+                <span class="cssdelimitercolor" style="color: black">{</span
+                ><span class="csspropertycolor" style="color: red"
+                  ><br />&nbsp; display<span
+                    class="csspropertyvaluecolor"
+                    style="color: mediumblue"
+                    ><span class="cssdelimitercolor" style="color: black"
+                      >:</span
+                    >
+                    inline-grid<span
+                      class="cssdelimitercolor"
+                      style="color: black"
+                      >;</span
+                    ></span
+                  ><br /></span
+                ><span class="cssdelimitercolor" style="color: black">}</span>
+              </span>
+            </div>
+            <p>
+              <a
+                class="w3-btn"
+                target="_blank"
+                href="tryit.asp?filename=trycss_grid_display_inline-grid"
+                >Try it Yourself »</a
+              >
+            </p>
+          </div>
+          <p>
+            All direct children of the grid container automatically become
+            <em>grid items</em>.
+          </p>
+          <hr class="my-4" />
+          <h2>Grid Columns</h2>
+          <p>The vertical lines of grid items are called <em>columns</em>.</p>
+          <img
+            src="https://www.w3schools.com/css/grid_columns.png"
+            style="max-width: 100%"
+          />
+          <hr class="my-4" />
+          <h2>Grid Rows</h2>
+          <p>The horizontal lines of grid items are called <em>rows</em>.</p>
+          <img
+            src="https://www.w3schools.com/css/grid_rows.png"
+            style="max-width: 100%"
+          />
+          <hr class="my-4" />
+          <h2>Grid Gaps</h2>
+          <p>The spaces between each column/row are called <em>gaps</em>.</p>
+          <img
+            src="https://www.w3schools.com/css/grid_gaps.png"
+            style="background-color: white; max-width: 100%"
+          />
+          <p>
+            You can adjust the gap size by using one of the following
+            properties:
+          </p>
+          <ul>
+            <li><code class="w3-codespan">column-gap</code></li>
+            <li><code class="w3-codespan">row-gap</code></li>
+            <li><code class="w3-codespan">gap</code></li>
+          </ul>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <p>
+              The <code class="w3-codespan">column-gap</code> property sets the
+              gap between the columns:
+            </p>
+            <div class="w3-code notranslate cssHigh">
+              <span class="cssselectorcolor" style="color: brown">
+                .grid-container
+                <span class="cssdelimitercolor" style="color: black">{</span
+                ><span class="csspropertycolor" style="color: red"
+                  ><br />&nbsp; display<span
+                    class="csspropertyvaluecolor"
+                    style="color: mediumblue"
+                    ><span class="cssdelimitercolor" style="color: black"
+                      >:</span
+                    >
+                    grid<span class="cssdelimitercolor" style="color: black"
+                      >;</span
+                    ></span
+                  ><br /><strong
+                    >&nbsp; column-gap<span
+                      class="csspropertyvaluecolor"
+                      style="color: mediumblue"
+                      ><span class="cssdelimitercolor" style="color: black"
+                        >:</span
+                      >
+                      50px<span class="cssdelimitercolor" style="color: black"
+                        >;</span
+                      ></span
+                    ></strong
+                  ><br /></span
+                ><span class="cssdelimitercolor" style="color: black">}</span>
+              </span>
+            </div>
+            <p>
+              <a
+                class="w3-btn"
+                target="_blank"
+                href="tryit.asp?filename=trycss_grid_grid-column-gap"
+                >Try it Yourself »</a
+              >
+            </p>
+          </div>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <p>
+              The <code class="w3-codespan">row-gap</code> property sets the gap
+              between the rows:
+            </p>
+            <div class="w3-code notranslate cssHigh">
+              <span class="cssselectorcolor" style="color: brown">
+                .grid-container
+                <span class="cssdelimitercolor" style="color: black">{</span
+                ><span class="csspropertycolor" style="color: red"
+                  ><br />&nbsp; display<span
+                    class="csspropertyvaluecolor"
+                    style="color: mediumblue"
+                    ><span class="cssdelimitercolor" style="color: black"
+                      >:</span
+                    >
+                    grid<span class="cssdelimitercolor" style="color: black"
+                      >;</span
+                    ></span
+                  ><br /><strong
+                    >&nbsp; row-gap<span
+                      class="csspropertyvaluecolor"
+                      style="color: mediumblue"
+                      ><span class="cssdelimitercolor" style="color: black"
+                        >:</span
+                      >
+                      50px<span class="cssdelimitercolor" style="color: black"
+                        >;</span
+                      ></span
+                    ><br /></strong></span
+                ><span class="cssdelimitercolor" style="color: black">}</span>
+              </span>
+            </div>
+            <p>
+              <a
+                class="w3-btn"
+                target="_blank"
+                href="tryit.asp?filename=trycss_grid_grid-row-gap"
+                >Try it Yourself »</a
+              >
+            </p>
+          </div>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <p>
+              The <code class="w3-codespan">gap</code> property is a shorthand
+              property for the <code class="w3-codespan">row-gap</code> and the
+              <code class="w3-codespan">column-gap</code> properties:
+            </p>
+            <div class="w3-code notranslate cssHigh">
+              <span class="cssselectorcolor" style="color: brown">
+                .grid-container
+                <span class="cssdelimitercolor" style="color: black">{</span
+                ><span class="csspropertycolor" style="color: red"
+                  ><br />&nbsp; display<span
+                    class="csspropertyvaluecolor"
+                    style="color: mediumblue"
+                    ><span class="cssdelimitercolor" style="color: black"
+                      >:</span
+                    >
+                    grid<span class="cssdelimitercolor" style="color: black"
+                      >;</span
+                    ></span
+                  ><br /><strong
+                    >&nbsp; gap<span
+                      class="csspropertyvaluecolor"
+                      style="color: mediumblue"
+                      ><span class="cssdelimitercolor" style="color: black"
+                        >:</span
+                      >
+                      50px 100px<span
+                        class="cssdelimitercolor"
+                        style="color: black"
+                        >;</span
+                      ></span
+                    ><br /></strong></span
+                ><span class="cssdelimitercolor" style="color: black">}</span>
+              </span>
+            </div>
+            <p>
+              <a
+                class="w3-btn"
+                target="_blank"
+                href="tryit.asp?filename=trycss_grid_grid-gap2"
+                >Try it Yourself »</a
+              >
+            </p>
+          </div>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <p>
+              The <code class="w3-codespan">gap</code> property can also be used
+              to set both the row gap and the column gap in one value:
+            </p>
+            <div class="w3-code notranslate cssHigh">
+              <span class="cssselectorcolor" style="color: brown">
+                .grid-container
+                <span class="cssdelimitercolor" style="color: black">{</span
+                ><span class="csspropertycolor" style="color: red"
+                  ><br />&nbsp; display<span
+                    class="csspropertyvaluecolor"
+                    style="color: mediumblue"
+                    ><span class="cssdelimitercolor" style="color: black"
+                      >:</span
+                    >
+                    grid<span class="cssdelimitercolor" style="color: black"
+                      >;</span
+                    ></span
+                  ><br /><strong
+                    >&nbsp; gap<span
+                      class="csspropertyvaluecolor"
+                      style="color: mediumblue"
+                      ><span class="cssdelimitercolor" style="color: black"
+                        >:</span
+                      >
+                      50px<span class="cssdelimitercolor" style="color: black"
+                        >;</span
+                      ></span
+                    ><br /></strong></span
+                ><span class="cssdelimitercolor" style="color: black">}</span>
+              </span>
+            </div>
+            <p>
+              <a
+                class="w3-btn"
+                target="_blank"
+                href="tryit.asp?filename=trycss_grid_grid-gap"
+                >Try it Yourself »</a
+              >
+            </p>
+          </div>
+          <hr class="my-4" />
+          <h2>Grid Lines</h2>
+          <p>The lines between columns are called <em>column lines</em>.</p>
+          <p>The lines between rows are called <em>row lines</em>.</p>
+          <img src="https://www.w3schools.com/css/grid_lines.png" style="background-color:white;max-width:100%">
+          <p>Refer to line numbers when placing a grid item in a grid container:</p>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <p>Place a grid item at column line 1, and let it end on column line 3:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br><strong>
+              &nbsp; </strong>grid-column-start<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; grid-column-end<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_lines">Try it Yourself »</a>
+            </p>
+            </div>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <p>Place a grid item at row line 1, and let it end on row line 3:</p>
+              <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br><strong>
+                &nbsp; </strong>grid-row-start<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; grid-row-end<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+              <p>
+              <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_lines2">Try it Yourself »</a>
+              </p>
+              </div>
+              <hr class="my-4" />
+              <h2>All CSS Grid Properties</h2>
+              <table class="ws-table-all notranslate">
+                <tbody><tr>
+                  <th style="width:30%">Property</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/css3_pr_column-gap.asp">column-gap</a></td>
+                  <td>Specifies the gap between the columns</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/css3_pr_gap.asp">gap</a></td>
+                  <td>A shorthand property for the <em>row-gap</em> and the <em>column-gap</em> properties</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid.asp">grid</a></td>
+                  <td>A shorthand property for the <em>grid-template-rows, 
+                  grid-template-columns, grid-template-areas, grid-auto-rows, 
+                  grid-auto-columns</em>, and the <em>grid-auto-flow</em> properties</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-area.asp">grid-area</a></td>
+                  <td>Either specifies a name for the grid item, or this property is a shorthand property for the <em>grid-row-start</em>, <em>grid-column-start</em>, <em>grid-row-end</em>, and <em>grid-column-end</em> properties</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-auto-columns.asp">grid-auto-columns</a></td>
+                  <td>Specifies a default column size</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-auto-flow.asp">grid-auto-flow</a></td>
+                  <td>Specifies how auto-placed items are inserted in the grid</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-auto-rows.asp">grid-auto-rows</a></td>
+                  <td>Specifies a default row size</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-column.asp">grid-column</a></td>
+                  <td>A shorthand property for the <em>grid-column-start</em> and the <em>grid-column-end</em> properties</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-column-end.asp">grid-column-end</a></td>
+                  <td>Specifies where to end the grid item</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-column-gap.asp">grid-column-gap</a></td>
+                  <td>Specifies the size of the gap between columns</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-column-start.asp">grid-column-start</a></td>
+                  <td>Specifies where to start the grid item</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-gap.asp">grid-gap</a></td>
+                  <td>A shorthand property for the <em>grid-row-gap</em> and <em>grid-column-gap</em> properties</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-row.asp">grid-row</a></td>
+                  <td>A shorthand property for the <em>grid-row-start</em> and the <em>grid-row-end</em> properties</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-row-end.asp">grid-row-end</a></td>
+                  <td>Specifies where to end the grid item</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-row-gap.asp">grid-row-gap</a></td>
+                  <td>Specifies the size of the gap between rows</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-row-start.asp">grid-row-start</a></td>
+                  <td>Specifies where to start the grid item</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-template.asp">grid-template</a></td>
+                  <td>A shorthand property for the <em>grid-template-rows</em>, <em>grid-template-columns</em> 
+                  and <em>grid-areas</em> properties</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-template-areas.asp">grid-template-areas</a></td>
+                  <td>Specifies how to display columns and rows, using named grid items</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-template-columns.asp">grid-template-columns</a></td>
+                  <td>Specifies the size of the columns, and how many columns in a grid layout</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/pr_grid-template-rows.asp">grid-template-rows</a></td>
+                  <td>Specifies the size of the rows in a grid layout</td>
+                </tr>
+                <tr>
+                  <td><a href="/cssref/css3_pr_row-gap.asp">row-gap</a></td>
+                  <td>Specifies the gap between the grid rows</td>
+                </tr>
+              </tbody></table>
+              <br>
+        </div>
+
+        <div class="col-2 mt-5">
+          <div>
+            <img
+              src="https://images01.nicepagecdn.com/page/55/87/tr/web-sitesi-sablonu-preview-5587790.jpg"
+              class="w-75"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-12 pe-0 ps-4">
+          <img
+            src="https://www.w3schools.com/images/background_in_space.gif"
+            alt=""
+            class="w-100 h-100"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- AJAX kullanarak sayfa değiştirme  -->
+    <script>
+      $(document).ready(function () {
+        // Sayfa numaralarına tıklama işlemi
+        $(document)
+          .off("click", ".pagination a.page-link")
+          .on("click", ".pagination a.page-link", function (e) {
+            e.preventDefault(); // Sayfanın yeniden yüklenmesini engelleme
+            var url = $(this).attr("href"); // Tıklanan sayfa bağlantısını alma
+            $.ajax({
+              url: url,
+              type: "GET",
+              success: function (data) {
+                // Yüklenecek veriyi sayfa içine yerleştirme
+                $("#your-card-container").html(
+                  $(data).find("#your-card-container").html()
+                );
+              },
+              error: function () {
+                alert("Sayfa yüklenirken bir hata oluştu.");
+              },
+            });
+          });
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

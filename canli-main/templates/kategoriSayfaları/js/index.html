@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="searchbar" oninput="filterCategories()">
+<div id="categories">
+  <div>Kategori 1</div>
+  <div>Kategori 2</div>
+  <div>Kategori 3</div>
+  <!-- Diğer kategoriler buraya eklenebilir -->
+</div>
+
+<script>
+    function filterCategories() {
+        var input, filter, categories, category, i;
+        input = document.getElementById("searchbar");
+        filter = input.value.toUpperCase();
+        categories = document.getElementById("categories");
+        category = categories.getElementsByTagName("div");
+      
+        for (i = 0; i < category.length; i++) {
+          if (category[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            category[i].style.display = "";
+          } else {
+            category[i].style.display = "none";
+          }
+        }
+      }
+      
+</script>
+</body>
+</html>

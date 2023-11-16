@@ -1,0 +1,28 @@
+        <div class="leftmenuinnerinner fixed-top z-1 col-2 bg-secondary bg-opacity-25 overflow-x-hidden " style=" height: 100vh;overflow-y: scroll;width: 230px;margin-top:100px;" >
+            <div class="flex-shrink-0 p-3 align-items-stretch w-100 mb-3 ">
+                <ul class="list-unstyled ps-0">
+                <li>
+                    {% for i in kategoriler %}
+                    {% if i.parent == None %}
+                    <h5 class="text-black" >
+                        {{i.isim}}
+                    </h5>
+                    {% endif %}
+                    <div>
+                        <ul class="pagination list-unstyled mt-1 mb-2" style="width:100vh;" >
+                            <li style="margin-left:-28px;width:100vh;padding-left:28px;" class="d-block " >
+                                <a   {% if i.referanceBaslik  %} class="  link-body-emphasis d-inline-flex text-decoration-none rounded"   href="{% url 'html' i.isim|slugify %}" {% else %} class="page-item  link-body-emphasis d-inline-flex text-decoration-none rounded"  href="?page={{ forloop.counter }}" {% endif %}>
+                                    {% if i.parent == None %}
+                                        {{ i.isim|truncatechars:19 }}
+                                    {% else %}
+                                        {{ i.isim|truncatechars:19 }}
+                                    {% endif %}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                {% endfor %}
+                </li>
+                </ul>
+            </div>
+        </div>

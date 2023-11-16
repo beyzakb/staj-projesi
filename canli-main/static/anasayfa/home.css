@@ -1,0 +1,878 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.containerDiv {
+    width: 100%;
+    padding: 0;
+}
+
+.contentDiv {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    background: url("https://www.w3schools.com/images/background_in_space.gif");
+    color: white;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.formSearch {
+    margin-top: 2rem;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.title2 {
+    color: #FFF4A3;
+    font-weight: 700;
+    margin-top: 30px !important;
+    font-size: 23px;
+}
+
+.formSearch {
+    margin-bottom: 2rem;
+}
+
+.contentDiv a {
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 30px !important;
+}
+
+.contentDiv a:hover {
+    color: #FFF4A3;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 30px !important;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #282A35;
+    border-radius: 25px;
+    float: left;
+    width: 25rem;
+    padding-left: 25px;
+    background: white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    border-right: 1px solid #04AA6D;
+    outline: 0;
+}
+
+.btn {
+    border-radius: 25px;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #04AA6D;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #282A35;
+    border-left: none;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.btn:hover {
+    border: 1px solid white;
+    color: rgb(87, 84, 233);
+    background-color: white;
+}
+
+.htmlDiv {
+    background-color: #D9EEE1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentTitle {
+    font-size: 8rem;
+}
+
+.contentText {
+    font-size: 2rem;
+}
+
+
+.contentBtn {
+    padding: 10px;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.cssDiv {
+    background-color: #FFF4A3 !important;
+    color: black !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jsDiv {
+    background-color: #282A35 !important;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pythonDiv {
+    color: black !important;
+    background-color: #F3ECEA !important;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sqlDiv {
+    color: black !important;
+    background-color: #96D4D4 !important;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.otherContainer {
+    background-color: #282A35 !important;
+    height: 100%;
+}
+
+.otherCourseDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.otherCourse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 3rem;
+    width: 40%;
+    /* background-color: #FFC0C7; */
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.otherCourseTitle {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.otherCourseText {
+    color: #3a3a3a !important;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.otherBtn {
+    border: none;
+    background-color: #282A35;
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    width: 200px;
+    border-radius: 25px;
+    padding: 0.5rem;
+}
+
+.littleBoxDiv {
+    display: flex;
+}
+
+.littleBox {
+    text-align: center;
+    width: 16.6%;
+    padding: 24px;
+    margin-top: 2rem;
+    margin-left: 6.6rem;
+    border-radius: 5px;
+    background-color: #F3ECEA !important;
+    color: black !important;
+}
+
+.codeEditorDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.codeEditorTitle {
+    font-size: 65px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.codeEditorText {
+    margin-top: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.codeEditorImg {
+    margin-bottom: 1rem;
+}
+
+.codeEditorBtn {
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    background-color: #04AA6D;
+    text-align: left;
+    margin: 0.5rem 16.5rem;
+}
+
+.w3SchoolsSpaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.w3SchoolsSpacesTitle {
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.w3SchoolsSpacesText{
+    margin-top: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.w3SchoolsSpacesImg{
+    max-width: 100%;
+    width: 850px;
+    margin-bottom: 55px;
+    margin-top: 20px;
+}
+
+.howItWorks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howItWorks a{
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 21px;
+    margin-top: 16px;
+    display: block;
+    width: 300px;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 11px 18px;
+}
+
+.myLearning{
+    margin-top: 3rem;
+    background-color: #D9EEE1!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myLearningTitle{
+    margin-top: 3rem;
+    font-size: 65px;
+    font-weight:700;
+}
+
+.myLearningText{
+    margin-top: 35px;
+}
+
+.myLearningImg{
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+
+.myLearning a{
+    text-align: center;
+    background-color: #04AA6D;
+    margin: auto;
+    display: block;
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 22px;
+    font-size: 20px;
+    width: 300px;
+    padding: 11px 18px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.becomeaProUser{
+    margin-top: 3rem;
+    color: #D9EEE1!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.becomeaProUserTitle{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 55px;
+    padding-top: 11px;
+    padding-bottom: 20px;
+    font-family: Source Sans Pro;
+    color: #fff;
+    margin: 0;
+}
+
+.becomeaProUserText{
+    font-size: 25px;
+    color: #FFC0C7;
+    margin: 19px 0;
+}
+
+.becomeaProUser ul {
+    display: inline-block;
+}
+
+.becomeaProUser li {
+    font-size: 20px;
+    line-height: 36px;
+    text-align: left;
+    list-style-type: none;
+}
+
+.becomeaProUser a {
+    text-align: center;
+    background-color: #04AA6D;
+    margin: auto;
+    display: block;
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 25px;
+    font-size: 20px;
+    width: 300px;
+    padding: 11px 18px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.colorPicker{
+    margin-top: 3rem;
+    background-color: #F3ECEA!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colorPickerTitle{
+    margin-top: 3rem;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.colorPickerText{
+    margin-top: 25px;
+}
+
+.colorPicker a{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.codeGame{
+    background-color: #96D4D4!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.codeGameTitle{
+    margin-top: 3rem;
+    font-family: 'Freckle Face', cursive;
+    font-size:48px
+}
+
+.codeGameText{
+    margin-top: 3rem;
+    font-family: 'Freckle Face', cursive;
+}
+
+.codeGame a{
+    margin-top: 16px;
+}
+
+.codeGameBtn{
+    font-size: 20px;
+    padding: 11px 18px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: #282A35;
+    color: white;
+    display: block;
+    width: 200px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.exercisesAndQuizzes{
+    margin-top: 3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercisesAndQuizzesTitle{
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.exercisesAndQuizzesText{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.exercisesAndQuizzesBtnDiv{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.exercisesDiv{
+    background-color: #04AA6D;
+    padding: 70px 50px;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.quizzesDiv{
+    background-color: #FFF4A3;
+    padding: 70px 50px;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.exercisesDiv a{
+    padding: 70px 50px;
+    font-size: 35px;
+    width: 87%;
+    opacity: 0.97;
+    text-decoration: none;
+    color: white;
+}
+
+.quizzesDiv a{
+    padding: 70px 50px;
+    font-size: 35px;
+    width: 87%;
+    opacity: 0.97;
+    text-decoration: none;
+    color: black;
+}
+
+.webTemplates{
+    background-color: #E7E9EB!important;
+    margin-top: 3rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.webTemplatesTitle{
+    margin-top: 3rem;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+
+.webTemplatesImg{
+    margin-top: 2rem;
+    max-width: 980px;
+}
+
+.webTemplates a{
+    width: 50%;
+    font-size: 20px;
+    background-color: #282A35;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 25px;
+}
+
+.kickstartYourCareer{
+    max-width: 1225px;
+    margin: auto;
+    height: 100%;
+    background-color: #282A35 !important;
+    margin-top: 0;
+    padding-bottom: 64px;
+    background-color: #282A35;
+}
+
+.kickstartYourCareerTitle{
+    font-size: 62px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFC0C7;
+}
+
+.kickstartYourCareerText{
+    font-size: 52px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFC0C7;
+}
+
+.kickstartYourCareer a{
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #04AA6D;
+    padding: 17px 55px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+/* #w3_cert_arrow_default {
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: 0;
+    transform: rotate(10deg);
+    bottom: -50px;
+    z-index: 1;
+}
+
+#w3_cert_badge_default {
+    position: absolute;
+    right: 25px;
+    width: 220px;
+    transform: rotate(10deg);
+    bottom: -130px;
+} */
+
+.howToSection{
+    background-color: white!important;
+    margin-top: 3rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howToSectionTitle{
+    margin-top: 3rem;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.howToSectionText{
+    margin-top: 2rem;
+}
+
+.howToSectionImg{
+    margin-top: 1rem;
+}
+
+.carousel{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.howToSection a{
+    font-size: 20px;
+    width: 50%;
+    margin-top: 73px;
+    border-radius: 25px;
+    background-color: #282A35!important;
+    color: white!important;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+    margin-bottom: 3rem;
+}
+
+
+
+/* footer başlangıç */
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+}
+.footer-col h5{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 300;
+}
+.footer-col h5::before{
+	content: '';
+
+	left:0;
+	bottom: -10px;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 12px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ffff;
+	display: block;
+	transition: all 0.3s ease;
+    font-family: Source Sans Pro, sans-serif;
+    line-height: 15px;
+}
+.footer-col ul li a:hover{
+	color: #59bd1b;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* footer bitiş */
+
+
+
+
+
+
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    color: #fff4a3;
+    background-color: rgb(40, 42, 52);
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    top: 55px;
+    left:0;
+}
+.dropdown-content a {
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    display: inline;
+    padding: 5px 10px;
+}
+.dropdown-content a:hover{
+    background-color: rgb(178, 174, 174);
+    border-radius: 5%;
+    color: rgb(35, 35, 35);
+}
+.dropdown-content a:nth-child(2),
+.dropdown-content a:nth-child(3) {
+    color: #FFF4A3!important;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.dropdown-content a:nth-child(2):hover ,
+.dropdown-content a:nth-child(3):hover {
+    background-color: green;
+    color: white!important;
+    border-radius: 5px;
+}
+
+.show1{
+    background-color:rgb(40, 42, 52)!important;
+    color: white!important;
+    padding-top: 28px;
+    margin-top: -20px;
+    padding-bottom: 26px;
+    margin-bottom: -20px;
+}
+#dropdownBtn:hover,#dropdownBtn2:hover,#dropdownBtn3:hover{
+    background-color: green;
+    padding-top: 28px;
+    margin-top: -20px;
+    padding-bottom: 16px;
+    margin-bottom: -14px;
+}
+.show {
+    display: block;
+}
+/* üst navbar search*/
+.search-up{
+    position:relative;
+    border: 1px solid gray;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.search-up:focus{
+    border: 0;
+    outline: 2px solid green;
+}
+/* üst navbar search*/
+.search-span{
+    background-color: #464646;
+    padding:4px 12px;
+}
+.search-span:focus{
+    outline: 2px solid green;
+}
+.search-span:hover{
+    background-color: #d0c7c7;
+}
+.search-nav-input{
+    border: 1px solid rgba(255, 244, 163, 0.2);
+    color: white;
+    padding-left: 25px;
+}
+.search-nav-input:focus{
+    outline: 2px solid green;
+    border: 0;
+}
+.search-nav-input::placeholder{
+    color: white;
+    font-size: 16px;
+}
+.nav-dropdown-learn{
+    color: gray;
+    font-size: 14px;
+}
+/* navbar açılır kapanır ok img hareketleri  */
+#dropdownBtn #caret-up,#dropdownBtn2 #caret-up,#dropdownBtn3 #caret-up {
+    display: none;
+}
+
+#dropdownBtn.show1 #caret-down,#dropdownBtn2.show1 #caret-down,#dropdownBtn3.show1 #caret-down {
+    display: none;
+}
+
+#dropdownBtn.show1 #caret-up,#dropdownBtn2.show1 #caret-up,#dropdownBtn3.show1 #caret-up {
+    display: inline-block;
+}
+/* navbar açılır kapanır ok img hareketleri  */
+
+@media(max-width: 768px){
+    body{
+        max-width: 768px;
+    }
+    img{
+        max-width: 500px;
+    }
+    .carousel-item{
+        max-width: 765px;
+    }
+    .webTemplatesImg{
+        max-width: 500px;
+    }
+    .codeEditorBtn{
+       margin-right: 0px;
+       margin-left: 132px;
+    }
+    .littleBoxDiv{
+        padding-right: 3rem;
+    }
+    .littleBox{
+        margin-left: 5rem;
+        padding: 15px;
+    }
+}
